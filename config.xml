@@ -2,17 +2,17 @@
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
         xmlns:android = "http://schemas.android.com/apk/res/android"
-        id        = "com.moodle.moodlemobile"
-        versionCode = "20170"
-        version   = "3.2.1">
-    <name>Moodle Mobile</name>
+        id        = "plataforma.br.com.ilabora"
+        versionCode = "1"
+        version   = "1.0">
+    <name>Moodle Mobile Plataforma</name>
 
     <description>
-        Moodle Mobile official app
+        Moodle Mobile Plataforma
     </description>
 
-    <author href="http://moodle.com" email="mobile@moodle.com">
-        Moodle Pty Ltd
+    <author href="https://www.ilabora.com.br/plataforma/" email="elbyvaz@gmail.com">
+        iLabora
     </author>
 
     <gap:config-file platform="ios" parent="CFBundleShortVersionString">
