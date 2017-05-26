@@ -18,5 +18,8 @@
     "dev_debug": false,
     "notifications_enabled": true,
     "gcmpn": "694767596569",
+    "skipssoconfirmation": "false",
+    "forcedefaultlanguage": "false",
+    "customurlscheme": "moodlemobile",
     "reportbugmail": "elbyvaz@gmail.com"
 }
