@@ -1,6 +1,5 @@
 {
     "app_id" : "plataforma.br.com.ilabora",
-    "appname": "Moodle Mobile Plataforma",
     "versioncode" : "5",
     "versionname" : "5.0",
     "cache_expiration_time" : 300000,
@@ -9,10 +8,6 @@
     "wsservice" : "moodle_mobile_app",
     "wsextservice" : "local_mobile",
     "demo_sites": {},
-    "gcmpn": "694767596569",
-    "customurlscheme": "moodlemobile",
     "siteurl": "https://www.ilabora.com.br/plataforma/",
-    "skipssoconfirmation": "false",
-    "forcedefaultlanguage": "false",
-    "privacypolicy": "https://moodle.org/mod/page/view.php?id=8148"
+    "gcmpn": "694767596569"
 }
