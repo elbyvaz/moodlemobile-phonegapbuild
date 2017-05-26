@@ -17,7 +17,7 @@
 */
 
 
-#text::-webkit-input-placeholder::before {
+input-placeholder {
     color:#f00;
     content:"vai aqui meu site";
 }
