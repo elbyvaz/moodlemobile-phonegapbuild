@@ -17,7 +17,7 @@
 // This script should be added at the begining of the index.html and it should only use native javascript functions.
 
 // var appVersion = '3.2.1 (2017)',
-var appVersion = '1.3 (3)',
+var appVersion = '1.4 (4)',
     reportInBackgroundName = 'mmCoreReportInBackground',
     errors = [],
     ignoredFiles = ['www/index.html#/site/mod_page', 'www/index.html#/site/mod_resource', 'www/index.html#/site/mm_course-section'];
