@@ -592,7 +592,7 @@
     "mm.login.security_question": "Pergunta de segurança",
     "mm.login.selectacountry": "Selecione um país",
     "mm.login.signupplugindisabled": "{{$a}} não está habilitado.",
-    "mm.login.siteaddress": "Endereço do site",
+    "mm.login.siteaddress": "Endereço da plataforma",
     "mm.login.siteinmaintenance": "O site está em modo de manutenção",
     "mm.login.siteurl": "URL do site",
     "mm.login.siteurlrequired": "URL do site é obrigatória, por exemplo  <i>http://www.meusite.abc ou https://www.meusite.efg</i>",
