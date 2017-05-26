@@ -3,8 +3,8 @@
         xmlns:gap = "http://phonegap.com/ns/1.0"
         xmlns:android = "http://schemas.android.com/apk/res/android"
         id        = "plataforma.br.com.ilabora"
-        versionCode = "2"
-        version   = "2.0">
+        versionCode = "3"
+        version   = "3.0">
     <name>Moodle Mobile Plataforma</name>
 
     <description>
