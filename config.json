@@ -17,5 +17,6 @@
     "log_length" : 100,
     "dev_debug": false,
     "notifications_enabled": true,
-    "gcmpn": "694767596569"
+    "gcmpn": "694767596569",
+    "reportbugmail": "elbyvaz@gmail.com"
 }
