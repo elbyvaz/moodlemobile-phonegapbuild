@@ -1,5 +1,6 @@
 {
     "app_id" : "plataforma.br.com.ilabora",
+    "appname": "Moodle Mobile Plataforma",
     "versioncode" : "5",
     "versionname" : "5.0",
     "cache_expiration_time" : 300000,
@@ -14,8 +15,6 @@
     "sync_cron": 300000,
     "log_length" : 100,
     "dev_debug": false,
-    "extra_js": [],
-    "demo_sites": [],
     "notifications_enabled": true,
     "gcmpn": "694767596569"
 }
