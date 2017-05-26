@@ -9,6 +9,6 @@
     "wsextservice" : "local_mobile",
     "demo_sites": {},
     "siteurl": "https://www.ilabora.com.br/plataforma/",
-    "presets" : {"url": "https://www.ilabora.com.br/plataforma/"},
+    "presets" : {"url": "https://www.ilabora.com.br/plataforma/", "username": "elby"},
     "gcmpn": "694767596569"
 }
