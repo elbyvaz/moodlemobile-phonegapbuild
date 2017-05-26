@@ -15,6 +15,15 @@
   used under CC BY http://creativecommons.org/licenses/by/4.0/
   Modified icons to fit ionicon’s grid from original.
 */
+
+
+#text::-webkit-input-placeholder::before {
+    color:#f00;
+    content:"vai aqui meu site";
+}
+
+
+
 @font-face {
   font-family: "Ionicons";
   src: url("../lib/ionic/release/fonts/ionicons.eot?v=2.0.1");
