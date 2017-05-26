@@ -11,7 +11,6 @@
     "wsextservice" : "local_mobile",
     "presets" : {"url": "https://www.ilabora.com.br/plataforma/", "username": ""},
     "siteurl": "https://www.ilabora.com.br/plataforma/",
-    "url": "https://www.ilabora.com.br/plataforma/",
     "sync_ws_on" : true,
     "sync_css_on" : true,
     "sync_cron": 300000,
