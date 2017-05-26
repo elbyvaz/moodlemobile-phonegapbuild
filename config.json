@@ -10,7 +10,7 @@
     "wsservice" : "moodle_mobile_app",
     "wsextservice" : "local_mobile",
     "presets" : {"url": "https://www.ilabora.com.br/plataforma/", "username": ""},
-    "siteurl": "https://www.ilabora.com.br/plataforma/",
+    "siteurl": "",
     "demo_sites": {"student": {"url": "https://www.ilabora.com.br/plataforma/", "username": "elby", "password": "@elby2017"}},
     "sync_ws_on" : true,
     "sync_css_on" : true,
