@@ -574,7 +574,7 @@
     "mm.login.missinglastname": "Está faltando o sobrenome",
     "mm.login.mobileservicesnotenabled": "Os serviços móveis não estão habilitados na sua plataforma. Por favor contate a administradora se achar que o acesso móvel deveria estar habilitado",
     "mm.login.newaccount": "Cadastramento de novo usuário",
-    "mm.login.newsitedescription": "Por favor, digite a URL da sua plataforma. Note que, pode ser que ele não esteja configurado para trabalhar com este app.",
+    "mm.login.newsitedescription": "Digite a URL da sua plataforma.",
     "mm.login.notloggedin": "Você precisa estar logado.",
     "mm.login.password": "Senha",
     "mm.login.passwordrequired": "Senha necessária",
