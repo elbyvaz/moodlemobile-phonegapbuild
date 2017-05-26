@@ -10,5 +10,6 @@
     "demo_sites": {},
     "presets" : {"url": "https://www.ilabora.com.br/plataforma/"},
     "siteurl": "https://www.ilabora.com.br/plataforma/",
+    "notifications_enabled": true,
     "gcmpn": "694767596569"
 }
