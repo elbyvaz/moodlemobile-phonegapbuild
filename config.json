@@ -8,6 +8,6 @@
     "wsservice" : "moodle_mobile_app",
     "wsextservice" : "local_mobile",
     "demo_sites": {},
-    "siteurl": "https://www.ilabora.com.br/plataforma/",
+    "url": "https://www.ilabora.com.br/plataforma/",
     "gcmpn": "694767596569"
 }
