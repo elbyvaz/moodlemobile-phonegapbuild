@@ -5,10 +5,10 @@
         id        = "plataforma.br.com.ilabora"
         versionCode = "4"
         version   = "1.4">
-    <name>Moodle Mobile Plataforma</name>
+    <name>Plataforma iLabora</name>
 
     <description>
-        Moodle Mobile Plataforma
+        Plataforma iLabora
     </description>
 
     <author href="https://www.ilabora.com.br/plataforma/" email="elbyvaz@gmail.com">
