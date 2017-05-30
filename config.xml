@@ -5,10 +5,10 @@
         id        = "plataforma.br.com.ilabora"
         versionCode = "5"
         version   = "1.5">
-    <name>Plataforma iLabora</name>
+    <name>iLabora</name>
 
     <description>
-        Plataforma iLabora
+        iLabora
     </description>
 
     <author href="https://www.ilabora.com.br/plataforma/" email="elbyvaz@gmail.com">
