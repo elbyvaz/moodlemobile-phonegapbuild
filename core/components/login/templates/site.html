@@ -1,7 +1,3 @@
-<script type="text/javascript">
-  onload="connect('https://www.ilabora.com.br/plataforma');"
-</script>
-
 <ion-view view-title="{{ 'mm.login.connecttomoodle' | translate }}">
   <ion-nav-buttons side="secondary">
       <button class="button button-icon ion-help-circled" ng-click="showHelp()" aria-label="{{ 'mm.core.help' | translate }}"></button>
@@ -18,7 +14,7 @@
             
             
             <!-- <input type="url" placeholder="moodle.org" ng-model="siteurl" mm-no-input-validation mm-auto-focus > -->
-            <input type="url" placeholder="https://www.ilabora.com.br/plataforma" ng-model="siteurl" mm-no-input-validation mm-auto-focus >
+            <input type="url" placeholder="ph-https://www.ilabora.com.br/plataforma" ng-value="https://www.ilabora.com.br/plataforma" ng-model="siteurl" mm-no-input-validation mm-auto-focus >
             
           
           </ion-input>
