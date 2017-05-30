@@ -5769,7 +5769,7 @@ a.item-content {
   height: 8px;
   display: inline-block;
   border-radius: 100%;
-  background: #f00;
+  background: #000;
   opacity: 0.2; }
 
 button.swiper-pagination-bullet {
@@ -5786,16 +5786,16 @@ button.swiper-pagination-bullet {
   cursor: pointer; }
 
 .swiper-pagination-white .swiper-pagination-bullet {
-  background: #0f0; }
+  background: #fff; }
 
 .swiper-pagination-bullet-active {
   opacity: 1; }
 
 .swiper-pagination-white .swiper-pagination-bullet-active {
-  background: #00f; }
+  background: #fff; }
 
 .swiper-pagination-black .swiper-pagination-bullet-active {
-  background: #ccc; }
+  background: #000; }
 
 .swiper-container-vertical > .swiper-pagination {
   right: 10px;
