@@ -14,7 +14,7 @@
             
             
             <!-- <input type="url" placeholder="moodle.org" ng-model="siteurl" mm-no-input-validation mm-auto-focus > -->
-            <input type="url" placeholder="ph-https://www.ilabora.com.br/plataforma" ng-value="https://www.ilabora.com.br/plataforma" ng-model="siteurl" mm-no-input-validation mm-auto-focus >
+            <!-- <input type="url" ng-model="https://www.ilabora.com.br/plataforma" > -->
             
           
           </ion-input>
@@ -22,7 +22,9 @@
               
             
             
-            <button class="button button-block" ng-click="connect(siteurl)" ng-disabled="!siteurl">{{ 'mm.login.connect' | translate }}</button>
+            <!-- <button class="button button-block" ng-click="connect(siteurl)" ng-disabled="!siteurl">{{ 'mm.login.connect' | translate }}</button> -->
+            <!-- <input type="submit" class="button button-block" value="{{ 'mm.login.connect' | translate }}" > -->
+            <button class="button button-block" ng-click="connect('https://www.ilabora.com.br/plataforma')" >{{ 'mm.login.connect' | translate }}<br>(https://www.ilabora.com.br/plataforma)</button>
           
           
           
