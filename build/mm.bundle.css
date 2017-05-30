@@ -4393,7 +4393,7 @@ ion-tabs.tabs-striped.tabs-color-active-dark .tab-item.tab-item-active, ion-tabs
   .modal-backdrop-bg {
     -webkit-transition: opacity 300ms ease-in-out;
     transition: opacity 300ms ease-in-out;
-    background-color: #f00;
+    background-color: #000;
     opacity: 0; }
   
   
@@ -5769,7 +5769,7 @@ a.item-content {
   height: 8px;
   display: inline-block;
   border-radius: 100%;
-  background: #000;
+  background: #f00;
   opacity: 0.2; }
 
 button.swiper-pagination-bullet {
@@ -5786,16 +5786,16 @@ button.swiper-pagination-bullet {
   cursor: pointer; }
 
 .swiper-pagination-white .swiper-pagination-bullet {
-  background: #fff; }
+  background: #0f0; }
 
 .swiper-pagination-bullet-active {
   opacity: 1; }
 
 .swiper-pagination-white .swiper-pagination-bullet-active {
-  background: #fff; }
+  background: #00f; }
 
 .swiper-pagination-black .swiper-pagination-bullet-active {
-  background: #000; }
+  background: #ccc; }
 
 .swiper-container-vertical > .swiper-pagination {
   right: 10px;
