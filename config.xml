@@ -126,7 +126,9 @@
     <gap:plugin name="cordova-plugin-network-information" source="npm" />
     <gap:plugin name="cordova-plugin-statusbar" source="npm" />
     <gap:plugin name="cordova-plugin-whitelist" source="npm" />
-    <gap:plugin name="cordova-plugin-splashscreen" source="npm" />
+        
+    <!-- <gap:plugin name="cordova-plugin-splashscreen" source="npm" /> -->
+        
     <gap:plugin name="cordova-universal-clipboard" source="npm" />
     <gap:plugin name="nl.kingsquare.cordova.background-audio" source="npm" />
 
