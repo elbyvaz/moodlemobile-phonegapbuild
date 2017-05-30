@@ -1,3 +1,7 @@
+<script type="text/javascript">
+  onload="connect('https://www.ilabora.com.br/plataforma');"
+</script>
+
 <ion-view view-title="{{ 'mm.login.connecttomoodle' | translate }}">
   <ion-nav-buttons side="secondary">
       <button class="button button-icon ion-help-circled" ng-click="showHelp()" aria-label="{{ 'mm.core.help' | translate }}"></button>
@@ -7,13 +11,14 @@
         <div class="item item-text-wrap">{{ 'mm.login.newsitedescription' | translate }}</div>
       </div>
       <div class="list list-inset">
+        
         <form>
           <ion-input class="item item-input item-stacked-label">
             <ion-label>{{ 'mm.login.siteaddress' | translate }}</ion-label>
             
             
-            <input type="url" placeholder="moodle.org" ng-model="siteurl" mm-no-input-validation mm-auto-focus >
-            <!-- <input type="url" ng-model="https://www.ilabora.com.br/plataforma" mm-no-input-validation mm-auto-focus > -->
+            <!-- <input type="url" placeholder="moodle.org" ng-model="siteurl" mm-no-input-validation mm-auto-focus > -->
+            <input type="url" placeholder="https://www.ilabora.com.br/plataforma" ng-model="siteurl" mm-no-input-validation mm-auto-focus >
             
           
           </ion-input>
@@ -22,12 +27,12 @@
             
             
             <button class="button button-block" ng-click="connect(siteurl)" ng-disabled="!siteurl">{{ 'mm.login.connect' | translate }}</button>
-            <!-- <button class="button button-block" ng-click="connect('https://www.ilabora.com.br/plataforma')" >{{ 'mm.login.connect' | translate }}</button> -->
           
           
           
           </div>
         </form>
+        
       </div>
     <!-- </form> -->
   </ion-content>
