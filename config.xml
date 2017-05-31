@@ -59,7 +59,8 @@
     <preference name="iosPersistentFileLocation"        value="Compatibility" />
 
     <icon src="icon.png" />
-    <icon src="resources/android/icon/icon-36-ldpi.png"       gap:platform="android"    gap:density="ldpi" />
+    <!--
+        <icon src="resources/android/icon/icon-36-ldpi.png"       gap:platform="android"    gap:density="ldpi" />
     <icon src="resources/android/icon/icon-48-mdpi.png"       gap:platform="android"    gap:density="mdpi" />
     <icon src="resources/android/icon/icon-72-hdpi.png"       gap:platform="android"    gap:density="hdpi" />
     <icon src="resources/android/icon/icon-96-xhdpi.png"      gap:platform="android"    gap:density="xhdpi" />
@@ -83,6 +84,7 @@
     <icon src="resources/ios/icon/icon-76@2x.png"         gap:platform="ios"      width="152" height="152" />
     <icon src="resources/ios/icon/icon@2x.png"            gap:platform="ios"      width="114" height="114" />
     <icon src="resources/ios/icon/icon-72@2x.png"         gap:platform="ios"      width="144" height="144" />
+        -->
 
     <!--
         <gap:splash src="splash.png" />
