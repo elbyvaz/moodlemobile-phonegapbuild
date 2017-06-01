@@ -14,9 +14,17 @@
                         <a class="item item-text-wrap item-button-right" mm-split-view-link="site.mm_course-section({cid: courseId, sectionid: section.id, mid: moduleId})" title="{{section.name}}">
                             <mm-format-text watch="true">{{section.name}}</mm-format-text>
 
+                            
+                            
+                            
+                            <!--
                             <button ng-if="downloadSectionsEnabled && section.showDownload && !section.isDownloading && !section.isCalculating" ng-click="prefetch($event, section)" class="button button-icon" aria-label="{{ 'mm.core.download' | translate }}">
                                 <i class="icon ion-ios-cloud-download-outline"></i>
                             </button>
+                            -->
+                            
+                            
+                            
                             <button ng-if="downloadSectionsEnabled && section.showRefresh && !section.isDownloading && !section.isCalculating" ng-click="prefetch($event, section)" class="button button-icon" aria-label="{{ 'mm.core.refresh' | translate }}">
                                 <i class="icon ion-android-refresh"></i>
                             </button>
