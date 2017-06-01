@@ -10840,11 +10840,20 @@ angular.module('mm.core.login', [])
             });
         }]
     })
-    .state('mm_login.site', {
+    
+	
+	
+	
+	
+	/* TELA PARA COLOCAR A URL DO SITE/PLATAFORMA - ORIGINAL
+	.state('mm_login.site', {
         url: '/site',
         templateUrl: 'core/components/login/templates/site.html',
-        controller: 'mmLoginSiteCtrl'
+		controller: 'mmLoginSiteCtrl'
+        
     })
+	
+	TELA DE LOGIN E SENHA - ORIGINAL
     .state('mm_login.credentials', {
         url: '/cred',
         templateUrl: 'core/components/login/templates/credentials.html',
@@ -10861,6 +10870,30 @@ angular.module('mm.core.login', [])
             }
         }]
     })
+	*/
+	// TELA DE LOGIN E SENHA - CUSTOMIZADA PARA PULAR A TELA DE URL E SER A PRIMEIRA TELA DO APP
+	.state('mm_login.site', {
+        url: '/site',
+        templateUrl: 'core/components/login/templates/credentials.html',
+        controller: 'mmLoginCredentialsCtrl',
+        params: {
+            siteurl: 'https://www.ilabora.com.br/plataforma/',
+            username: '',
+            urltoopen: '',
+            siteconfig: null
+        },
+        onEnter: ["$state", "$stateParams", function($state, $stateParams) {
+            if (!$stateParams.siteurl) {
+              $state.go('mm_login.init');
+            }
+        }]
+    })
+	
+	
+	
+	
+	
+	
     .state('mm_login.reconnect', {
         url: '/reconnect',
         templateUrl: 'core/components/login/templates/reconnect.html',
