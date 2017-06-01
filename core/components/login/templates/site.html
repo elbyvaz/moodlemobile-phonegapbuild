@@ -4,35 +4,30 @@
   </ion-nav-buttons>
   <ion-content padding="true" id="mm-login-site" mm-state-class>
       
-      <!--
-      <div class="card">
+      
+    <div class="card">
         <div class="item item-text-wrap">{{ 'mm.login.newsitedescription' | translate }}</div>
       </div>
-      -->
-    
-      <br><br><br>
+      <!-- <br><br><br> -->
     
       <div class="list list-inset">
         
         <form>
-          <!--
           <ion-input class="item item-input item-stacked-label">
             <ion-label>{{ 'mm.login.siteaddress' | translate }}</ion-label>
-            <input type="url" placeholder="moodle.org" ng-model="siteurl" mm-no-input-validation mm-auto-focus >
+            <input type="url" placeholder="" ng-model="siteurl" mm-no-input-validation mm-auto-focus >
           </ion-input>
-          -->
           
           <div class="item item-input padding">
             
-            <!-- <button class="button button-block" ng-click="connect(siteurl)" ng-disabled="!siteurl">{{ 'mm.login.connect' | translate }}</button> -->
-            <!-- <input type="submit" class="button button-block" value="{{ 'mm.login.connect' | translate }}" > -->
-            <button class="button button-block" ng-click="connect('https://www.ilabora.com.br/plataforma')" >{{ 'mm.login.connect' | translate }}<br>(https://www.ilabora.com.br/plataforma)</button>
+            <button class="button button-block" ng-click="connect(siteurl)" ng-disabled="!siteurl">{{ 'mm.login.connect' | translate }}</button>
+            <!-- <button class="button button-block" ng-click="connect('https://www.ilabora.com.br/plataforma')" >{{ 'mm.login.connect' | translate }}<br>(https://www.ilabora.com.br/plataforma)</button> -->
           
           </div>
           
         </form>
         
       </div>
-    <!-- </form> -->
+    <!-- </form> --> <!-- esse FORM estava sobrando no arquivo original -->
   </ion-content>
 </ion-view>
