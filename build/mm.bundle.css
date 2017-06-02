@@ -3436,6 +3436,7 @@ a.subdued {
     background: none; }
 
 .bar-header {
+  background-color :  #004a8f; 
   top: 0;
   border-top-width: 0;
   border-bottom-width: 1px; }
