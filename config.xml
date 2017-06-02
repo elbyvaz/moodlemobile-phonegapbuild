@@ -16,7 +16,7 @@
     </author>
 
     <gap:config-file platform="ios" parent="CFBundleShortVersionString">
-        <string>3.2.1</string>
+        <string>1.6</string>
     </gap:config-file>
 
     <gap:platform name="ios" />
@@ -59,7 +59,7 @@
     <preference name="iosPersistentFileLocation"        value="Compatibility" />
 
     <icon src="icon.png" />
-    <!--
+    
         <icon src="resources/android/icon/icon-36-ldpi.png"       gap:platform="android"    gap:density="ldpi" />
     <icon src="resources/android/icon/icon-48-mdpi.png"       gap:platform="android"    gap:density="mdpi" />
     <icon src="resources/android/icon/icon-72-hdpi.png"       gap:platform="android"    gap:density="hdpi" />
@@ -84,10 +84,8 @@
     <icon src="resources/ios/icon/icon-76@2x.png"         gap:platform="ios"      width="152" height="152" />
     <icon src="resources/ios/icon/icon@2x.png"            gap:platform="ios"      width="114" height="114" />
     <icon src="resources/ios/icon/icon-72@2x.png"         gap:platform="ios"      width="144" height="144" />
-        -->
 
-    <!--
-        <gap:splash src="splash.png" />
+    <gap:splash src="splash.png" />
     <gap:splash src="resources/android/splash/drawable-land-ldpi-screen.png"      gap:platform="android" gap:qualifier="land-ldpi"/>
     <gap:splash src="resources/android/splash/drawable-land-mdpi-screen.png"      gap:platform="android" gap:qualifier="land-mdpi"/>
     <gap:splash src="resources/android/splash/drawable-land-hdpi-screen.png"      gap:platform="android" gap:qualifier="land-hdpi"/>
@@ -112,7 +110,6 @@
     <gap:splash src="resources/ios/splash/Default-Portrait~ipad.png"      gap:platform="ios" width="768" height="1024"/>
     <gap:splash src="resources/ios/splash/Default@2x~iphone.png"          gap:platform="ios" width="640" height="960"/>
     <gap:splash src="resources/ios/splash/Default~iphone.png"             gap:platform="ios" width="320" height="480"/>
-        -->
 
     <gap:plugin name="cordova-plugin-camera" source="npm" />
     <gap:plugin name="cordova-plugin-media-capture" source="npm">
@@ -128,9 +125,7 @@
     <gap:plugin name="cordova-plugin-network-information" source="npm" />
     <gap:plugin name="cordova-plugin-statusbar" source="npm" />
     <gap:plugin name="cordova-plugin-whitelist" source="npm" />
-        
-    <!-- <gap:plugin name="cordova-plugin-splashscreen" source="npm" /> -->
-        
+    <gap:plugin name="cordova-plugin-splashscreen" source="npm" />
     <gap:plugin name="cordova-universal-clipboard" source="npm" />
     <gap:plugin name="nl.kingsquare.cordova.background-audio" source="npm" />
 
