@@ -656,6 +656,7 @@ angular.module('mm.core')
                 return !syncOnlyOnWifi || !$mmApp.isNetworkAccessLimited();
             });
 
+
         } else {
             promise = $q.when(true);
         }
@@ -3469,6 +3470,7 @@ angular.module('mm.core')
                     promise = fn($injector);
                 } catch (e) {
                     $log.error('Error while calling the init process \'' + data.name + '\'. ' + e);
+
                     return;
                 }
                 return promise;
@@ -5731,6 +5733,7 @@ angular.module('mm.core')
             return text;
         });
     };
+
         self.escapeHTML = function(text) {
         if (typeof text == 'undefined' || text === null || (typeof text == 'number' && isNaN(text))) {
             return '';
@@ -10649,6 +10652,7 @@ angular.module('mm.core.course', ['mm.core.courses'])
         },
         views: {
             'site': {
+
                 templateUrl: 'core/components/course/templates/section.html',
                 controller: 'mmCourseSectionCtrl'
             }
@@ -19719,6 +19723,7 @@ angular.module('mm.core.sharedfiles')
     };
         self.getSiteSharedFilesDirPath = function(siteId) {
         siteId = siteId || $mmSite.getId();
+
         return $mmFS.getSiteFolder(siteId) + '/' + mmSharedFilesFolder;
     };
         self._isFileTreated = function(fileId) {
@@ -21502,6 +21507,7 @@ angular.module('mm.addons.mod_wiki', [])
     $mmEvents.on(mmCoreEventLogout, $mmaModWiki.clearSubwikiList);
     $mmCronDelegate.register('mmaModWiki', '$mmaModWikiHandlers.syncHandler');
 }]);
+
 
 angular.module('mm.addons.qbehaviour_adaptive', ['mm.core'])
 .config(["$mmQuestionBehaviourDelegateProvider", function($mmQuestionBehaviourDelegateProvider) {
@@ -30764,7 +30770,8 @@ angular.module('mm.addons.competency')
                 return enabled;
             });
         };
-                self.getController = function(courseId) {
+                /*
+				self.getController = function(courseId) {
                         return function($scope, $state) {
                 $scope.icon = 'ion-ribbon-a';
                 $scope.title = 'mma.competency.competencies';
@@ -30778,6 +30785,7 @@ angular.module('mm.addons.competency')
                 };
             };
         };
+		*/
         return self;
     };
         self.learningPlan = function() {
@@ -30809,7 +30817,8 @@ angular.module('mm.addons.competency')
                 });
             }
         };
-                self.getController = function(user, courseId) {
+                /*
+				self.getController = function(user, courseId) {
                         return function($scope, $state) {
                 $scope.class = 'mma-competency-handler';
                 if (courseId) {
@@ -30836,6 +30845,7 @@ angular.module('mm.addons.competency')
                 }
             };
         };
+		*/
         return self;
     };
     return self;
@@ -33070,6 +33080,7 @@ angular.module('mm.addons.mod_assign')
         $mmCourseHelper.confirmAndRemove(module, courseId);
     };
     $scope.prefetch = function() {
+
         $mmCourseHelper.contextMenuPrefetch($scope, module, courseId);
     };
     $scope.expandDescription = function() {
@@ -36272,6 +36283,7 @@ angular.module('mm.addons.mod_choice')
             ps.push(self.invalidateChoiceData(courseId));
             ps.push(self.invalidateOptions(choice.id));
             ps.push(self.invalidateResults(choice.id));
+
             return $q.all(ps);
         }));
         promises.push($mmFilepool.invalidateFilesByComponent(siteId, mmaModChoiceComponent, moduleId));
@@ -40412,6 +40424,7 @@ angular.module('mm.addons.mod_glossary')
     };
         self.syncGlossaryEntries = function(glossaryId, userId, siteId) {
         userId = userId || $mmSite.getUserId();
+
         siteId = siteId || $mmSite.getId();
         var syncPromise,
             courseId,
@@ -50310,6 +50323,7 @@ angular.module('mm.addons.mod_wiki')
                             if (showMyGroupsLabel) {
                                 candidateSubwikiId = subwiki.id;
                             }
+
                         } else if (subwiki.id > 0) {
                             candidateSubwikiId = subwiki.id;
                         }
