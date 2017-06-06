@@ -736,7 +736,10 @@
     "mma.calendar.noevents": "Sem eventos",
     "mma.calendar.notifications": "Notificação",
     "mma.competency.activities": "Atividades",
+    
     "mma.competency.competenciesmostoftennotproficientincourse": "Competências mais frequentemente improficiente neste treinamento",
+    "mma.competency.competencies": "Competências",
+    
     "mma.competency.coursecompetencies": "Competências do treinamento",
     "mma.competency.coursecompetencyratingsarenotpushedtouserplans": "Avaliações de competência neste treinamento não afetam os planos de aprendizagem.",
     "mma.competency.coursecompetencyratingsarepushedtouserplans": "Avaliações de competência neste treinamento são atualizadas imediatamente nos planos de aprendizagem.",
