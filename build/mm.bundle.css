@@ -35,6 +35,10 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
+.ion-ribbon-a:before, .ion-ribbon-b:before {
+  display: none;
+}
+
 .ion-alert:before {
   content: "\f101"; }
 
