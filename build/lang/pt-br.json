@@ -1,5 +1,8 @@
 {
     "mm.contentlinks.chooseaccount": "Escolha a conta",
+    
+    "mma.messages.messagepreferences": "Preferências sobre as mensagens",
+    
     "mm.contentlinks.chooseaccounttoopenlink": "Escolha a conta que irá abrir o link",
     "mm.contentlinks.confirmurlothersite": "O link pertence a outro site. Você quer abrir-lo?",
     "mm.contentlinks.errornoactions": "Não foi possível encontrar uma ação para executar com este link.",
