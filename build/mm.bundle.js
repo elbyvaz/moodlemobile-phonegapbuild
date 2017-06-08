@@ -10863,10 +10863,11 @@ angular.module('mm.core.login', [])
             urltoopen: '',
             siteconfig: null
         },
+		NULL
+        /*
 		onEnter: ["$state", "$stateParams", function($state, $stateParams) {
             if (!$stateParams.siteurl) {
-              // $state.go('mm_login.init');
-			  $soPraNaoDeixarEmBranco = 1;
+              $state.go('mm_login.init');
             }
         }]
 		*/
