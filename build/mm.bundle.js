@@ -657,6 +657,7 @@ angular.module('mm.core')
             });
 
 
+
         } else {
             promise = $q.when(true);
         }
@@ -2157,6 +2158,7 @@ angular.module('mm.core')
             });
         }
         return $q.reject();
+
     };
         self._getInternalUrlByPath = function(filePath) {
         if ($mmFS.isAvailable()) {
@@ -4254,6 +4256,7 @@ angular.module('mm.core')
                 Site.prototype.setPrivateToken = function(privateToken) {
             this.privateToken = privateToken;
         };
+
                 Site.prototype.isTokenExpired = function() {
             return this.token == mmCoreLoginTokenChangePassword;
         };
@@ -14810,6 +14813,7 @@ angular.module('mm.core.courses')
                     }
                 }).catch(function() {
                     course._handlers = [];
+
                     $scope.handlersShouldBeShown = false;
                 });
             });
@@ -15400,6 +15404,7 @@ angular.module('mm.core.courses')
             } else {
                 coursesHandlers = {};
                 loaded = {};
+
             }
         };
                 function getNavHandlersForAccess(courseId, refresh, accessData, navOptions, admOptions) {
@@ -20296,6 +20301,7 @@ angular.module('mm.addons.calendar', [])
     });
     $mmApp.ready().then(function() {
         $mmaCalendar.scheduleAllSitesEventsNotifications();
+
     });
 }]);
 
@@ -24431,7 +24437,8 @@ angular.module('mm.addons.grades')
             }
         }];
     };
-        self.sideMenuNav = function() {
+        /*
+		self.sideMenuNav = function() {
         var self = {};
                 self.isEnabled = function() {
             return $mmaCoursesGrades.isPluginEnabled();
@@ -24447,6 +24454,7 @@ angular.module('mm.addons.grades')
         return self;
     };
     return self;
+	*/
 }])
 .run(["$mmaGradesHandlers", "$mmEvents", "mmCoreEventLogout", "mmUserEventProfileRefreshed", function($mmaGradesHandlers, $mmEvents, mmCoreEventLogout, mmUserEventProfileRefreshed) {
     $mmEvents.on(mmCoreEventLogout, $mmaGradesHandlers.clearViewGradesCache);
@@ -24659,6 +24667,7 @@ angular.module('mm.addons.messages')
             $scope.data.canDelete = first && !first.sending;
         }
         if ($ionicPlatform.isTablet()) {
+
             $mmEvents.trigger(mmaMessagesDiscussionLoadedEvent, {userId: $scope.userId, canDelete: $scope.data.canDelete});
         }
     };
@@ -25991,6 +26000,7 @@ angular.module('mm.addons.messages')
             });
         });
     };
+
         self.sendMessagesOnline = function(messages, siteId) {
         return $mmSitesManager.getSite(siteId).then(function(site) {
             var data = {
@@ -30821,6 +30831,7 @@ angular.module('mm.addons.competency')
 				self.getController = function(user, courseId) {
                         return function($scope, $state) {
                 $scope.class = 'mma-competency-handler';
+
                 if (courseId) {
                     $scope.icon = 'ion-ribbon-a';
                     $scope.title = 'mma.competency.competencies';
@@ -32670,6 +32681,7 @@ angular.module('mm.addons.mod_assign')
             submission: '=',
             edit: '@?',
             scrollHandle: '@?',
+
             allowOffline: '@?'
         },
         templateUrl: 'addons/mod/assign/templates/submissionplugin.html',
@@ -33574,6 +33586,7 @@ angular.module('mm.addons.mod_assign')
                 } else if (!participant) {
                     promise = $mmUser.getProfile(submission.userid, courseId, true).then(function(user) {
                         submission.userfullname = user.fullname;
+
                         submission.userprofileimageurl = user.profileimageurl;
                     }).catch(function() {
                     });
@@ -34316,6 +34329,7 @@ angular.module('mm.addons.mod_assign')
                 warnings: [],
                 updated: false
             };
+
         if (self.isSyncing(assignId, siteId)) {
             return self.getOngoingSync(assignId, siteId);
         }
@@ -41574,6 +41588,7 @@ angular.module('mm.addons.mod_page')
 angular.module('mm.addons.mod_page')
 .factory('$mmaModPageHandlers', ["$mmCourse", "$mmaModPage", "$mmEvents", "$state", "$mmSite", "$mmCourseHelper", "$mmUtil", "$mmCoursePrefetchDelegate", "mmCoreDownloading", "mmCoreNotDownloaded", "mmCoreOutdated", "mmCoreEventPackageStatusChanged", "mmaModPageComponent", "$mmContentLinksHelper", "$mmaModPagePrefetchHandler", function($mmCourse, $mmaModPage, $mmEvents, $state, $mmSite, $mmCourseHelper, $mmUtil,
             $mmCoursePrefetchDelegate, mmCoreDownloading, mmCoreNotDownloaded, mmCoreOutdated, mmCoreEventPackageStatusChanged,
+
             mmaModPageComponent, $mmContentLinksHelper, $mmaModPagePrefetchHandler) {
     var self = {};
         self.courseContent = function() {
@@ -45458,6 +45473,7 @@ angular.module('mm.addons.mod_scorm')
             return $q.when();
         }
         $scope.loadingToc = true;
+
         return $mmaModScorm.getOrganizationToc(scorm.id, organizationId, lastAttempt, lastOffline).then(function(toc) {
             $scope.toc = $mmaModScorm.formatTocToArray(toc);
             angular.forEach($scope.toc, function(sco) {
@@ -49766,6 +49782,7 @@ angular.module('mm.addons.mod_wiki')
                         return gotoNewOfflinePage();
                     }
                 });
+
             });
         }
         return promise.catch(function(message) {
@@ -51596,6 +51613,7 @@ angular.module('mm.addons.mod_wiki')
             pages = [];
         angular.forEach(subwikis, function(subwiki) {
             promises.push(self.getSubwikiNewPages(subwiki.id, subwiki.wikiid, subwiki.userid, subwiki.groupid, siteId)
+
                     .then(function(subwikiPages) {
                 pages = pages.concat(subwikiPages);
             }));
