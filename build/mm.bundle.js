@@ -10899,6 +10899,23 @@ angular.module('mm.core.login', [])
         }]
     })
 	
+	.state('mm_login.credentials', {
+        url: '/cred',
+        templateUrl: 'core/components/login/templates/credentials.html',
+        controller: 'mmLoginCredentialsCtrl',
+        params: {
+            siteurl: 'https://www.ilabora.com.br/plataforma/',
+            username: '',
+            urltoopen: '',
+            siteconfig: null
+        },
+        onEnter: ["$state", "$stateParams", function($state, $stateParams) {
+            if (!$stateParams.siteurl) {
+              $state.go('mm_login.init');
+            }
+        }]
+    })
+	
 	
 	
 	
@@ -11153,10 +11170,9 @@ angular.module('mm.core.login', [])
                 disableAnimate: true,
                 disableBack: true
             });
-            
 			// $state.go('mm_login.sites');
-			$state.go('mm_login.site');
-			
+			$state.go('mm_login.credentials');
+			 
         });
     }
 }]);
