@@ -24438,24 +24438,26 @@ angular.module('mm.addons.grades')
         }];
     };
         
-		/*
 		self.sideMenuNav = function() {
         var self = {};
                 self.isEnabled = function() {
             return $mmaCoursesGrades.isPluginEnabled();
         };
-                self.getController = function() {
+                /*
+				self.getController = function() {
                         return function($scope) {
                 $scope.icon = 'ion-stats-bars';
                 $scope.title = 'mm.grades.grades';
                 $scope.state = 'site.coursesgrades';
                 $scope.class = 'mma-grades-coursesgrades';
+				
             };
         };
+		*/
+		
         return self;
     };
     return self;
-	*/
 	
 }])
 .run(["$mmaGradesHandlers", "$mmEvents", "mmCoreEventLogout", "mmUserEventProfileRefreshed", function($mmaGradesHandlers, $mmEvents, mmCoreEventLogout, mmUserEventProfileRefreshed) {
