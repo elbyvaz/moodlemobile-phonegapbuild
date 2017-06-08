@@ -10840,7 +10840,9 @@ angular.module('mm.core.login', [])
         controller: 'mmLoginInitCtrl',
         cache: false
     })
-    .state('mm_login.sites', {
+    
+	/* ORIGINAL - vai pra tela de "Mudar site"
+	.state('mm_login.sites', {
         url: '/sites',
         templateUrl: 'core/components/login/templates/sites.html',
         controller: 'mmLoginSitesCtrl',
@@ -10848,6 +10850,23 @@ angular.module('mm.core.login', [])
             $mmSitesManager.hasNoSites().then(function() {
                 $mmLoginHelper.goToAddSite();
             });
+        }]
+    })
+	*/
+	.state('mm_login.sites', {
+        url: '/sites',
+        templateUrl: 'core/components/login/templates/credentials.html',
+        controller: 'mmLoginCredentialsCtrl',
+        params: {
+            siteurl: 'https://www.ilabora.com.br/plataforma/',
+            username: '',
+            urltoopen: '',
+            siteconfig: null
+        },
+        onEnter: ["$state", "$stateParams", function($state, $stateParams) {
+            if (!$stateParams.siteurl) {
+              $state.go('mm_login.init');
+            }
         }]
     })
     
@@ -10861,24 +10880,6 @@ angular.module('mm.core.login', [])
         templateUrl: 'core/components/login/templates/site.html',
 		controller: 'mmLoginSiteCtrl'
         
-    })
-	
-	TELA DE LOGIN E SENHA - ORIGINAL
-    .state('mm_login.credentials', {
-        url: '/cred',
-        templateUrl: 'core/components/login/templates/credentials.html',
-        controller: 'mmLoginCredentialsCtrl',
-        params: {
-            siteurl: '',
-            username: '',
-            urltoopen: '',
-            siteconfig: null
-        },
-        onEnter: ["$state", "$stateParams", function($state, $stateParams) {
-            if (!$stateParams.siteurl) {
-              $state.go('mm_login.init');
-            }
-        }]
     })
 	*/
 	// TELA DE LOGIN E SENHA - CUSTOMIZADA PARA PULAR A TELA DE URL E SER A PRIMEIRA TELA DO APP
@@ -10899,6 +10900,25 @@ angular.module('mm.core.login', [])
         }]
     })
 	
+	
+	/* TELA DE LOGIN E SENHA - ORIGINAL
+    .state('mm_login.credentials', {
+        url: '/cred',
+        templateUrl: 'core/components/login/templates/credentials.html',
+        controller: 'mmLoginCredentialsCtrl',
+        params: {
+            siteurl: '',
+            username: '',
+            urltoopen: '',
+            siteconfig: null
+        },
+        onEnter: ["$state", "$stateParams", function($state, $stateParams) {
+            if (!$stateParams.siteurl) {
+              $state.go('mm_login.init');
+            }
+        }]
+    })
+	*/
 	.state('mm_login.credentials', {
         url: '/cred',
         templateUrl: 'core/components/login/templates/credentials.html',
@@ -11170,9 +11190,7 @@ angular.module('mm.core.login', [])
                 disableAnimate: true,
                 disableBack: true
             });
-			// $state.go('mm_login.sites');
-			$state.go('mm_login.credentials');
-			 
+			$state.go('mm_login.sites');
         });
     }
 }]);
