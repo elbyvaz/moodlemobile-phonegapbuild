@@ -24437,8 +24437,7 @@ angular.module('mm.addons.grades')
             }
         }];
     };
-        /*
-		self.sideMenuNav = function() {
+        self.sideMenuNav = function() {
         var self = {};
                 self.isEnabled = function() {
             return $mmaCoursesGrades.isPluginEnabled();
@@ -24454,7 +24453,7 @@ angular.module('mm.addons.grades')
         return self;
     };
     return self;
-	*/
+	
 }])
 .run(["$mmaGradesHandlers", "$mmEvents", "mmCoreEventLogout", "mmUserEventProfileRefreshed", function($mmaGradesHandlers, $mmEvents, mmCoreEventLogout, mmUserEventProfileRefreshed) {
     $mmEvents.on(mmCoreEventLogout, $mmaGradesHandlers.clearViewGradesCache);
