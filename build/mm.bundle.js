@@ -11155,7 +11155,7 @@ angular.module('mm.core.login', [])
             });
             
 			// $state.go('mm_login.sites');
-			$state.go('mm_login.reconnect');
+			$state.go('mm_login.credentials');
 			
         });
     }
