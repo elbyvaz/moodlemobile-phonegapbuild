@@ -1122,7 +1122,9 @@
     "mma.notes.warningnotenotsent": "Não foi possível adicionar anotação(s) ao treinamento {{course}}. {{error}}",
     "mma.notifications.errorgetnotifications": "Erro ao receber notificações",
     "mma.notifications.notificationpreferences": "Preferência de notificações",
-    "mma.notifications.notifications": "Notificação",
+    
+    "mma.notifications.notifications": "Notificações",
+    
     "mma.notifications.therearentnotificationsyet": "Não há notificações",
     "mma.participants.noparticipants": "Nenhum dos participantes encontrados para este treinamento",
     "mma.participants.participants": "Participantes"
