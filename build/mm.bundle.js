@@ -24446,7 +24446,8 @@ angular.module('mm.addons.grades')
                 self.isEnabled = function() {
             return $mmaCoursesGrades.isPluginEnabled();
         };
-                self.getController = function() {
+                /*
+				self.getController = function() {
                         return function($scope) {
                 $scope.icon = 'ion-stats-bars';
                 $scope.title = 'mm.grades.grades';
@@ -24454,7 +24455,7 @@ angular.module('mm.addons.grades')
                 $scope.class = 'mma-grades-coursesgrades';
             };
         };
-		
+		*/
         return self;
     };
     return self;
