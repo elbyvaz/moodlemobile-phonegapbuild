@@ -10863,7 +10863,7 @@ angular.module('mm.core.login', [])
             urltoopen: '',
             siteconfig: null
         },
-		NULL
+		null
         /*
 		onEnter: ["$state", "$stateParams", function($state, $stateParams) {
             if (!$stateParams.siteurl) {
