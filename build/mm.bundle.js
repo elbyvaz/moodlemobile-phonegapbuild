@@ -24447,14 +24447,12 @@ angular.module('mm.addons.grades')
             return $mmaCoursesGrades.isPluginEnabled();
         };
                 self.getController = function() {
-					/*
                         return function($scope) {
                 $scope.icon = 'ion-stats-bars';
                 $scope.title = 'mm.grades.grades';
                 $scope.state = 'site.coursesgrades';
                 $scope.class = 'mma-grades-coursesgrades';
             };
-			*/
         };
 		
         return self;
