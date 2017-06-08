@@ -50,9 +50,10 @@
                     <!-- FIM nao aparece isso no menu, mas deve ser importante para a navegacao. -->
                     
                     <!-- de Pagina Inicial, Notas, Notificacao, Mensagens, Eventos do calendario, Meus Arquivos Privados -->
-                    <li ng-repeat="handler in handlers | orderBy:'-priority'" ng-controller="handler.controller" class="mm-sidemenu-handler {{class}}">
+                    
+                    <li        ng-if="{{title | translate}} != 'Notas'"               ng-repeat="handler in handlers | orderBy:'-priority'" ng-controller="handler.controller" class="mm-sidemenu-handler {{class}}">
                         
-                        <a         ng-if="{{title | translate}} != 'Notas'"          menu-close class="item item-icon-left" ui-sref="{{state}}" title="{{title | translate}}" ng-class="{'item-icon-right': loading}">
+                        <a menu-close class="item item-icon-left" ui-sref="{{state}}" title="{{title | translate}}" ng-class="{'item-icon-right': loading}">
                         
                             <i class="icon {{icon}}"></i> {{title | translate}}
                             
