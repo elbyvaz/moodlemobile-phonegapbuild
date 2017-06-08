@@ -11187,7 +11187,6 @@ angular.module('mm.core.settings', [])
         }
     })
     
-	/*
 	.state('site.mm_settings-about', {
         url: '/mm_settings-about',
         views: {
@@ -11197,7 +11196,6 @@ angular.module('mm.core.settings', [])
             }
         }
     })
-	*/
 	
     .state('site.mm_settings-general', {
         url: '/mm_settings-general',
@@ -11365,7 +11363,6 @@ angular.module('mm.core.user', ['mm.core.contentlinks'])
             }
         })
         
-		/*
 		.state('site.mm_user-about', {
             url: '/mm_user-about',
             views: {
@@ -11379,7 +11376,6 @@ angular.module('mm.core.user', ['mm.core.contentlinks'])
                 userid: 0
             }
         });
-		*/
 		
     $mmContentLinksDelegateProvider.registerLinkHandler('mmUser', '$mmUserHandlers.linksHandler');
     $mmUserDelegateProvider.registerProfileHandler('mmUser', '$mmUserHandlers.userEmail', mmUserPriority);
