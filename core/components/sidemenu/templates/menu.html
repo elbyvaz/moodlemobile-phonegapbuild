@@ -49,7 +49,7 @@
                     </li>
                     <!-- FIM nao aparece isso no menu, mas deve ser importante para a navegacao. -->
                     
-                    <!-- de Pagina Inicial a Meus Arquivos Privados -->
+                    <!-- de Pagina Inicial, Notas, Notificacao, Mensagens, Eventos do calendario, Meus Arquivos Privados -->
                     <li ng-repeat="handler in handlers | orderBy:'-priority'" ng-controller="handler.controller" class="mm-sidemenu-handler {{class}}">
                         <a menu-close class="item item-icon-left" ui-sref="{{state}}" title="{{title | translate}}" ng-class="{'item-icon-right': loading}">
                             <i class="icon {{icon}}"></i> {{title | translate}}
@@ -57,7 +57,7 @@
                             <ion-spinner ng-if="loading" class="icon"></ion-spinner>
                         </a>
                     </li>
-                    <!-- FIM de Pagina Inicial a Meus Arquivos Privados -->
+                    <!-- FIM de Pagina Inicial, Notas, Notificacao, Mensagens, Eventos do calendario, Meus Arquivos Privados -->
                     
                     <!-- nao aparece isso no menu. Imagino q seja para itens customizados -->
                     <li ng-repeat="item in customItems" class="mm-sidemenu-customitem">
