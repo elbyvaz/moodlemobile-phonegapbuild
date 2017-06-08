@@ -24189,7 +24189,8 @@ angular.module('mm.addons.frontpage')
             }
             return false;
         };
-                self.getController = function() {
+                /*
+				self.getController = function() {
                         return function($scope) {
                 $scope.icon = 'ion-home';
                 $scope.title = 'mma.frontpage.sitehome';
@@ -24197,6 +24198,8 @@ angular.module('mm.addons.frontpage')
                 $scope.class = 'mma-frontpage-handler';
             };
         };
+		*/
+		
         return self;
     };
         self.linksHandler = $mmContentLinkHandlerFactory.createChild(
@@ -24443,8 +24446,7 @@ angular.module('mm.addons.grades')
                 self.isEnabled = function() {
             return $mmaCoursesGrades.isPluginEnabled();
         };
-                /*
-				self.getController = function() {
+                self.getController = function() {
                         return function($scope) {
                 $scope.icon = 'ion-stats-bars';
                 $scope.title = 'mm.grades.grades';
@@ -24453,7 +24455,6 @@ angular.module('mm.addons.grades')
 				
             };
         };
-		*/
 		
         return self;
     };
