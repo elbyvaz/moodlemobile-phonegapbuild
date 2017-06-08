@@ -10863,14 +10863,13 @@ angular.module('mm.core.login', [])
             urltoopen: '',
             siteconfig: null
         },
-		null
-        /*
+		
 		onEnter: ["$state", "$stateParams", function($state, $stateParams) {
             if (!$stateParams.siteurl) {
-              $state.go('mm_login.init');
+              // $state.go('mm_login.init');
+			  $abc = '';
             }
         }]
-		*/
     })
     
 	
