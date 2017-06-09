@@ -24428,7 +24428,6 @@ angular.module('mm.addons.grades')
         }];
     };
         
-		/*
 		self.sideMenuNav = function() {
         var self = {};
                 self.isEnabled = function() {
@@ -24436,18 +24435,19 @@ angular.module('mm.addons.grades')
         };	
 				
 				self.getController = function() {
+					/*
                         return function($scope) {
                 $scope.icon = 'ion-stats-bars';
                 $scope.title = 'mm.grades.grades';
                 $scope.state = 'site.coursesgrades';
                 $scope.class = 'mma-grades-coursesgrades';
             };
+			*/
         };
 		
         return self;
 		
     };
-	*/
     return self;
 	
 }])
@@ -25314,7 +25314,7 @@ angular.module('mm.addons.messages')
                     $mmaPushNotifications = $mmAddonManager.get('$mmaPushNotifications'),
                     readChangedObserver, cronObserver;
                 $scope.icon = 'ion-chatbox';
-                $scope.title = '25323';
+                $scope.title = 'mma.messages.messages';
                 $scope.state = 'site.messages';
                 $scope.class = 'mma-messages-handler';
                 if ($mmaMessages.isMessageCountEnabled(true)) {
