@@ -24176,7 +24176,9 @@ angular.module('mm.addons.frontpage')
             }
             return false;
         };
-                /*
+                
+				
+				
 				self.getController = function() {
                         return function($scope) {
                 $scope.icon = 'ion-home';
@@ -24185,7 +24187,9 @@ angular.module('mm.addons.frontpage')
                 $scope.class = 'mma-frontpage-handler';
             };
         };
-		*/
+		
+		
+		
 		
         return self;
     };
