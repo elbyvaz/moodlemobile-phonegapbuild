@@ -10862,13 +10862,12 @@ angular.module('mm.core.login', [])
             username: '',
             urltoopen: '',
             siteconfig: null
-        } /* ,
+        },
 		onEnter: ["$state", "$stateParams", function($state, $stateParams) {
             if (!$stateParams.siteurl) {
               $state.go('mm_login.init');
             }
         }]
-		*/
     })
     
 	
@@ -10893,13 +10892,12 @@ angular.module('mm.core.login', [])
             username: '',
             urltoopen: '',
             siteconfig: null
-        } /* ,
+        },
         onEnter: ["$state", "$stateParams", function($state, $stateParams) {
             if (!$stateParams.siteurl) {
               $state.go('mm_login.init');
             }
         }]
-		*/
     })
 	
 	
@@ -10930,13 +10928,12 @@ angular.module('mm.core.login', [])
             username: '',
             urltoopen: '',
             siteconfig: null
-        } /* ,
+        },
         onEnter: ["$state", "$stateParams", function($state, $stateParams) {
             if (!$stateParams.siteurl) {
               $state.go('mm_login.init');
             }
         }]
-		*/
     })
 	
 	
@@ -11190,7 +11187,7 @@ angular.module('mm.core.login', [])
     function logout() {
         $mmSitesManager.logout().then(function() {
             $ionicHistory.nextViewOptions({
-                disableAnimate: true,
+                disableAnimate: false,
                 disableBack: true
             });
 			$state.go('mm_login.sites');
