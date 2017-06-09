@@ -10,7 +10,6 @@
     "wsextservice" : "local_mobile",
     "demo_sites": {},
     "siteurl": "https://www.ilabora.com.br/plataforma/",
-    "siteLogout": "https://www.ilabora.com.br/plataforma/core/components/login/templates/credentials.html",
     "notifications_enabled": true,
     "gcmpn": "694767596569"
 }
