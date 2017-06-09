@@ -24428,6 +24428,7 @@ angular.module('mm.addons.grades')
         }];
     };
         
+		/*
 		self.sideMenuNav = function() {
         var self = {};
                 self.isEnabled = function() {
@@ -24451,9 +24452,10 @@ angular.module('mm.addons.grades')
 		
 		
 		
-        // return self;
+        return self;
 		
     };
+	*/
     return self;
 	
 }])
@@ -25320,7 +25322,7 @@ angular.module('mm.addons.messages')
                     $mmaPushNotifications = $mmAddonManager.get('$mmaPushNotifications'),
                     readChangedObserver, cronObserver;
                 $scope.icon = 'ion-chatbox';
-                $scope.title = 'mma.messages.messages';
+                $scope.title = '25323';
                 $scope.state = 'site.messages';
                 $scope.class = 'mma-messages-handler';
                 if ($mmaMessages.isMessageCountEnabled(true)) {
