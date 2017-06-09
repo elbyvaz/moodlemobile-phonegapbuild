@@ -10856,7 +10856,19 @@ angular.module('mm.core.login', [])
 	.state('mm_login.sites', {
         url: '/sites',
         templateUrl: 'core/components/login/templates/credentials.html',
-		controller: 'mmLoginCredentialsCtrl'
+        controller: 'mmLoginCredentialsCtrl',
+        params: {
+            siteurl: 'https://www.ilabora.com.br/plataforma/',
+            username: '',
+            urltoopen: '',
+            siteconfig: null
+        } /* ,
+		onEnter: ["$state", "$stateParams", function($state, $stateParams) {
+            if (!$stateParams.siteurl) {
+              $state.go('mm_login.init');
+            }
+        }]
+		*/
     })
     
 	
@@ -10881,12 +10893,13 @@ angular.module('mm.core.login', [])
             username: '',
             urltoopen: '',
             siteconfig: null
-        },
+        } /* ,
         onEnter: ["$state", "$stateParams", function($state, $stateParams) {
             if (!$stateParams.siteurl) {
               $state.go('mm_login.init');
             }
         }]
+		*/
     })
 	
 	
@@ -10917,12 +10930,13 @@ angular.module('mm.core.login', [])
             username: '',
             urltoopen: '',
             siteconfig: null
-        },
+        } /* ,
         onEnter: ["$state", "$stateParams", function($state, $stateParams) {
             if (!$stateParams.siteurl) {
               $state.go('mm_login.init');
             }
         }]
+		*/
     })
 	
 	
