@@ -31077,7 +31077,8 @@ angular.module('mm.addons.notes')
                 return enabled;
             });
         };
-                self.getController = function(courseId) {
+                /*
+				self.getController = function(courseId) {
                         return function($scope, $state) {
                 $scope.icon = 'ion-ios-list';
                 $scope.title = 'mma.notes.notes';
@@ -31091,6 +31092,8 @@ angular.module('mm.addons.notes')
                 };
             };
         };
+		*/
+		
         return self;
     };
         self.syncHandler = function() {
