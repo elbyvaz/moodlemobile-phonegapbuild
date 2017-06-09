@@ -8377,9 +8377,10 @@ a.button {
 /**
  * App Branding
  */
+
+/*
 .mm-bglogo {
   background-color: white;
-  /* Change this to add a bg image or change color */
   background-repeat: no-repeat;
   background-position: center center;
   width: 100%;
@@ -8388,9 +8389,7 @@ a.button {
   bottom: 0; }
 
 .mm-logo {
-  /* background-image: url('../img/moodle.png'); */
   background-image: url('../img/logoCustomizado.png');
-  /* Change logo here */
   background-repeat: no-repeat;
   background-position: center center;
   width: 100%;
@@ -8404,8 +8403,8 @@ a.button {
   display: inline-block;
   height: 100%;
   vertical-align: middle;
-  margin-top: 120px;
-  /* Change this to place spinner under the logo (usually double of the logo size) */ }
+  margin-top: 120px; }
+*/
 
 /**
  * Styles revert.
