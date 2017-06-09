@@ -24336,7 +24336,7 @@ angular.module('mm.addons.grades')
                 self.getController = function() {
                         return function($scope, $state) {
                 $scope.icon = 'ion-stats-bars';
-                $scope.title = '24339';
+                $scope.title = 'mm.grades.grades';
                 $scope.class = 'mma-grades-mine-handler';
                 $scope.action = function($event, course) {
                     $event.preventDefault();
@@ -24370,7 +24370,7 @@ angular.module('mm.addons.grades')
         };
                 self.getController = function(user, courseId) {
                         return function($scope) {
-                $scope.title = '24373';
+                $scope.title = 'mm.grades.grades';
                 $scope.class = 'mma-grades-user-handler';
                 $scope.icon = 'ion-stats-bars';
                 $scope.action = function($event) {
@@ -24437,16 +24437,16 @@ angular.module('mm.addons.grades')
 				
 				
 				
-				
+				/*
 				self.getController = function() {
                         return function($scope) {
                 $scope.icon = 'ion-stats-bars';
-                $scope.title = '24444';
+                $scope.title = 'mm.grades.grades';
                 $scope.state = 'site.coursesgrades';
                 $scope.class = 'mma-grades-coursesgrades';
             };
         };
-		
+		*/
 		
 		
 		
