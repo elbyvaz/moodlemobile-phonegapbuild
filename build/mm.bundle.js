@@ -11130,8 +11130,7 @@ angular.module('mm.core.login', [])
                 disableBack: true
             });
 			// $state.go('mm_login.sites');
-			// $state.go('mm_login.credentials');
-			$state.go('mm_login.init');
+			$state.go('mm_login.credentials');
         });
     }
 }]);
