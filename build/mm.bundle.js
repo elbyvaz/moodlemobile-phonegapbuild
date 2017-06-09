@@ -10836,7 +10836,8 @@ angular.module('mm.core.login', [])
     })
     .state('mm_login.init', {
         url: '/init',
-        templateUrl: 'core/components/login/templates/init.html',
+        // templateUrl: 'core/components/login/templates/init.html',
+		templateUrl: '',
         controller: 'mmLoginInitCtrl',
         cache: false
     })
@@ -11188,7 +11189,7 @@ angular.module('mm.core.login', [])
         $mmSitesManager.logout().then(function() {
             $ionicHistory.nextViewOptions({
                 disableAnimate: true,
-                disableBack: false
+                disableBack: true
             });
 			$state.go('mm_login.sites');
         });
