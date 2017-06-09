@@ -24443,8 +24443,7 @@ angular.module('mm.addons.grades')
             };
 			
         };
-        // return self;
-		return {};
+        return self;
     };
     return self;
 	
