@@ -10874,7 +10874,8 @@ angular.module('mm.core.login', [])
             siteconfig: null
         },
         onEnter: ["$state", "$stateParams", function($state, $stateParams) {
-            if (!$stateParams.siteurl) {
+            // if (!$stateParams.siteurl) {
+			if ($stateParams.siteurl) {
               $state.go('mm_login.init');
             }
         }]
