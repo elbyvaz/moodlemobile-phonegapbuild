@@ -91,7 +91,8 @@ angular.module('mm.core', ['pascalprecht.translate'])
                             $state.go($stateParams.state, $stateParams.params);
                         }
                     }, function() {
-                        $state.go('mm_login.sites');
+                        // $state.go('mm_login.sites');
+						$state.go('mm_login.credentials');
                     });
                 }
                 $scope.$on('$ionicView.enter', function() {
@@ -112,7 +113,8 @@ angular.module('mm.core', ['pascalprecht.translate'])
                         if ($stateParams.siteid) {
                             loadSiteAndGo();
                         } else {
-                            $state.go('mm_login.sites');
+                            // $state.go('mm_login.sites');
+							$state.go('mm_login.credentials');
                         }
                     }
                 });
@@ -10841,7 +10843,6 @@ angular.module('mm.core.login', [])
         cache: false
     })
     
-	/* ORIGINAL - vai pra tela de "Mudar site"
 	.state('mm_login.sites', {
         url: '/sites',
         templateUrl: 'core/components/login/templates/sites.html',
@@ -10852,94 +10853,33 @@ angular.module('mm.core.login', [])
             });
         }]
     })
-	*/
-	.state('mm_login.sites', {
-        url: '/sites',
-        templateUrl: 'core/components/login/templates/credentials.html',
-        controller: 'mmLoginCredentialsCtrl',
-        params: {
-            siteurl: 'https://www.ilabora.com.br/plataforma/',
-            username: '',
-            urltoopen: '',
-            siteconfig: null
-        },
-		onEnter: ["$state", "$stateParams", function($state, $stateParams) {
-            if (!$stateParams.siteurl) {
-              $state.go('mm_login.init');
-            }
-        }]
-    })
-    
 	
-	
-	
-	
-	/* TELA PARA COLOCAR A URL DO SITE/PLATAFORMA - ORIGINAL
 	.state('mm_login.site', {
         url: '/site',
         templateUrl: 'core/components/login/templates/site.html',
 		controller: 'mmLoginSiteCtrl'
         
     })
-	*/
-	// TELA DE LOGIN E SENHA - CUSTOMIZADA PARA PULAR A TELA DE URL E SER A PRIMEIRA TELA DO APP
-	.state('mm_login.site', {
-        url: '/site',
-        templateUrl: 'core/components/login/templates/credentials.html',
-        controller: 'mmLoginCredentialsCtrl',
-        params: {
-            siteurl: 'https://www.ilabora.com.br/plataforma/',
-            username: '',
-            urltoopen: '',
-            siteconfig: null
-        },
-        onEnter: ["$state", "$stateParams", function($state, $stateParams) {
-            if (!$stateParams.siteurl) {
-              $state.go('mm_login.init');
-            }
-        }]
-    })
 	
 	
-	/* TELA DE LOGIN E SENHA - ORIGINAL
-    .state('mm_login.credentials', {
-        url: '/cred',
-        templateUrl: 'core/components/login/templates/credentials.html',
-        controller: 'mmLoginCredentialsCtrl',
-        params: {
-            siteurl: '',
-            username: '',
-            urltoopen: '',
-            siteconfig: null
-        },
-        onEnter: ["$state", "$stateParams", function($state, $stateParams) {
-            if (!$stateParams.siteurl) {
-              $state.go('mm_login.init');
-            }
-        }]
-    })
-	*/
 	.state('mm_login.credentials', {
         url: '/cred',
         templateUrl: 'core/components/login/templates/credentials.html',
         controller: 'mmLoginCredentialsCtrl',
         params: {
-            siteurl: 'https://www.ilabora.com.br/plataforma/',
+            // siteurl: '',
+			siteurl: 'https://www.ilabora.com.br/plataforma/',
             username: '',
             urltoopen: '',
             siteconfig: null
-        },
+        } /* ,
         onEnter: ["$state", "$stateParams", function($state, $stateParams) {
             if (!$stateParams.siteurl) {
               $state.go('mm_login.init');
             }
         }]
+		*/
     })
-	
-	
-	
-	
-	
 	
     .state('mm_login.reconnect', {
         url: '/reconnect',
@@ -11190,7 +11130,8 @@ angular.module('mm.core.login', [])
                 disableAnimate: true,
                 disableBack: true
             });
-			$state.go('mm_login.sites');
+			// $state.go('mm_login.sites');
+			$state.go('mm_login.credentials');
         });
     }
 }]);
@@ -12089,7 +12030,8 @@ angular.module('mm.core.contentlinks')
                 disableAnimate: true,
                 disableBack: true
             });
-            $state.go('mm_login.sites');
+            // $state.go('mm_login.sites');
+			$state.go('mm_login.credentials');
         });
     }
     if (!$scope.url) {
@@ -17289,7 +17231,8 @@ angular.module('mm.core.login')
             }
         } else {
             $mmSitesManager.hasSites().then(function() {
-                return $state.go('mm_login.sites');
+                // return $state.go('mm_login.sites');
+				return $state.go('mm_login.credentials');
             }, function() {
                 return $mmLoginHelper.goToAddSite();
             });
@@ -17324,7 +17267,8 @@ angular.module('mm.core.login')
                 disableAnimate: true,
                 disableBack: true
             });
-            $state.go('mm_login.sites');
+            // $state.go('mm_login.sites');
+			$state.go('mm_login.credentials');
         });
     };
     $scope.login = function() {
@@ -17493,7 +17437,8 @@ angular.module('mm.core.login')
                 disableAnimate: true,
                 disableBack: true
             });
-            $state.go('mm_login.sites');
+            // $state.go('mm_login.sites');
+			$state.go('mm_login.credentials');
         });
     }
 }]);
@@ -17653,7 +17598,8 @@ angular.module('mm.core.login')
         if (mmCoreConfigConstants.siteurl) {
             return $state.go('mm_login.credentials', {siteurl: mmCoreConfigConstants.siteurl});
         } else {
-            return $state.go('mm_login.site');
+            // return $state.go('mm_login.site');
+			return $state.go('mm_login.credentials');
         }
     };
         self.goToSiteInitialPage = function() {
@@ -19830,7 +19776,8 @@ angular.module('mm.core.sidemenu')
     loadSiteInfo();
     $scope.logout = function() {
         $mmSitesManager.logout().finally(function() {
-            $state.go('mm_login.sites');
+            // $state.go('mm_login.sites');
+			$state.go('mm_login.credentials');
         });
     };
     function loadSiteInfo() {
