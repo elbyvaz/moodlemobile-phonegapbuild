@@ -24428,7 +24428,6 @@ angular.module('mm.addons.grades')
         }];
     };
         
-		/*
 		self.sideMenuNav = function() {
         var self = {};
                 self.isEnabled = function() {
@@ -24455,7 +24454,6 @@ angular.module('mm.addons.grades')
         return self;
 		
     };
-	*/
     return self;
 	
 }])
