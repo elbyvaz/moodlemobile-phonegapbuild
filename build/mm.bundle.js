@@ -10836,8 +10836,7 @@ angular.module('mm.core.login', [])
     })
     .state('mm_login.init', {
         url: '/init',
-        // templateUrl: 'core/components/login/templates/init.html',
-		templateUrl: '',
+        templateUrl: 'core/components/login/templates/init.html',
         controller: 'mmLoginInitCtrl',
         cache: false
     })
