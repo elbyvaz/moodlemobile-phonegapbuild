@@ -11265,13 +11265,14 @@ angular.module('mm.core.sidemenu', [])
         templateUrl: 'core/components/sidemenu/templates/menu.html',
         controller: 'mmSideMenuCtrl',
         abstract: true,
-        cache: false,
+        cache: false /* ,
         onEnter: ["$ionicHistory", "$state", "$mmSite", function($ionicHistory, $state, $mmSite) {
             $ionicHistory.clearHistory();
             if (!$mmSite.isLoggedIn()) {
                 $state.go('mm_login.init');
             }
         }]
+		*/
     })
     .state('site.iframe-view', {
         url: '/iframe-view',
