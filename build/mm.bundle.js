@@ -24428,14 +24428,12 @@ angular.module('mm.addons.grades')
         }];
     };
         
+		/*
 		self.sideMenuNav = function() {
         var self = {};
                 self.isEnabled = function() {
             return $mmaCoursesGrades.isPluginEnabled();
-        };
-                
-				
-				
+        };	
 				
 				self.getController = function() {
                         return function($scope) {
@@ -24446,14 +24444,10 @@ angular.module('mm.addons.grades')
             };
         };
 		
-		
-		
-		
-		
-		
         return self;
 		
     };
+	*/
     return self;
 	
 }])
