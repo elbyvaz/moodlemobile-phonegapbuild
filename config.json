@@ -10,7 +10,7 @@
     "wsextservice" : "local_mobile",
     "demo_sites": {},
     "siteurl": "https://www.ilabora.com.br/plataforma/",
-    "logourl": "logoCustomizado.png",
+    "logourl": "img/logoCustomizado.png",
     "notifications_enabled": true,
     "gcmpn": "694767596569"
 }
