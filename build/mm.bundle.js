@@ -10854,7 +10854,9 @@ angular.module('mm.core.login', [])
     })
 	*/
 	.state('mm_login.sites', {
-        url: '/sites',
+        $state.go('mm_login.credentials');
+		/*
+		url: '/sites',
         templateUrl: 'core/components/login/templates/credentials.html',
         controller: 'mmLoginCredentialsCtrl',
         params: {
@@ -10868,6 +10870,7 @@ angular.module('mm.core.login', [])
               $state.go('mm_login.init');
             }
         }]
+		*/
     })
     
 	
