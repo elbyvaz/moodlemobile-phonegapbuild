@@ -24437,7 +24437,6 @@ angular.module('mm.addons.grades')
 				
 				
 				
-				/*
 				self.getController = function() {
                         return function($scope) {
                 $scope.icon = 'ion-stats-bars';
@@ -24446,13 +24445,14 @@ angular.module('mm.addons.grades')
                 $scope.class = 'mma-grades-coursesgrades';
             };
         };
-		*/
 		
 		
 		
 		
 		
-        return self;
+		
+        // return self;
+		
     };
     return self;
 	
