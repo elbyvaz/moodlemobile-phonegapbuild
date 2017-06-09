@@ -10830,21 +10830,15 @@ angular.module('mm.core.login', [])
     .state('mm_login', {
         url: '/mm_login',
         abstract: true,
-		
-        // templateUrl: 'core/components/login/templates/base.html',
-		templateUrl: '',
-        
-		cache: false,  
+        templateUrl: 'core/components/login/templates/base.html',
+        cache: false,  
         onEnter: ["$ionicHistory", function($ionicHistory) {
             $ionicHistory.clearHistory();
         }]
     })
     .state('mm_login.init', {
         url: '/init',
-        
-		// templateUrl: 'core/components/login/templates/init.html',
-		templateUrl: '',
-		
+        templateUrl: 'core/components/login/templates/init.html',
         controller: 'mmLoginInitCtrl',
         cache: false
     })
