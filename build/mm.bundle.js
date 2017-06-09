@@ -11187,8 +11187,8 @@ angular.module('mm.core.login', [])
     function logout() {
         $mmSitesManager.logout().then(function() {
             $ionicHistory.nextViewOptions({
-                disableAnimate: false,
-                disableBack: true
+                disableAnimate: true,
+                disableBack: false
             });
 			$state.go('mm_login.sites');
         });
