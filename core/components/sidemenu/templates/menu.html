@@ -51,7 +51,7 @@
                     
                     <!-- de Pagina Inicial, Notas, Notificacao, Mensagens, Eventos do calendario, Meus Arquivos Privados -->
                     <li ng-repeat="handler in handlers | orderBy:'-priority'" ng-controller="handler.controller" class="mm-sidemenu-handler {{class}}" >
-                        <a  ng-if="title != 'mm.grades.grades' && title != 'mma.frontpage.sitehome'"   menu-close class="item item-icon-left" ui-sref="{{state}}" title="{{title | translate}}" ng-class="{'item-icon-right': loading}">
+                        <a  ng-if="title != 'mm.grades.grades' && title != 'mma.frontpage.sitehome' && title != 'mma.files.myprivatefiles'"   menu-close class="item item-icon-left" ui-sref="{{state}}" title="{{title | translate}}" ng-class="{'item-icon-right': loading}">
                         
                             <i class="icon {{icon}}"></i>{{title | translate}}
                             
@@ -74,11 +74,13 @@
                     <!-- FIM nao aparece isso no menu. Imagino q seja para itens customizados -->
                     
                     <!-- Site -->
+                    <!--
                     <li ng-if="showWeb">
                         <a menu-close class="item item-icon-left" ng-href="{{siteinfo.siteurl}}" mm-link auto-login="yes" title="{{ 'mm.sidemenu.website' | translate}}">
                             <i class="icon ion-earth"></i>{{ 'mm.sidemenu.website' | translate}}
                         </a>
                     </li>
+                    -->
                     <!-- FIM Site -->
                     
                     <!-- Ajuda -->
