@@ -22808,7 +22808,8 @@ angular.module('mm.addons.badges')
             }
             return false;
         };
-                self.getController = function(user, courseId) {
+                /*
+				self.getController = function(user, courseId) {
                         return function($scope, $state) {
                 $scope.icon = 'ion-trophy';
                 $scope.title = 'mma.badges.badges';
@@ -22822,6 +22823,8 @@ angular.module('mm.addons.badges')
                 };
             };
         };
+		*/
+		
         return self;
     };
         self.myBadgesLinksHandler = $mmContentLinkHandlerFactory.createChild('/badges/mybadges.php', '$mmUserDelegate_mmaBadges');
