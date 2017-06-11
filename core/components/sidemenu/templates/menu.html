@@ -51,7 +51,7 @@
                     
                     <!-- de Pagina Inicial, Notas, Notificacao, Mensagens, Eventos do calendario, Meus Arquivos Privados -->
                     <li ng-repeat="handler in handlers | orderBy:'-priority'" ng-controller="handler.controller" class="mm-sidemenu-handler {{class}}" >
-                        <a  ng-if="title != 'mm.grades.grades' && title != 'mma.frontpage.sitehome' && title != 'mma.files.myprivatefiles'"   menu-close class="item item-icon-left" ui-sref="{{state}}" title="{{title | translate}}" ng-class="{'item-icon-right': loading}">
+                        <a  ng-if="title != 'mm.grades.grades' && title != 'mma.frontpage.sitehome' && title != 'mma.files.files'"   menu-close class="item item-icon-left" ui-sref="{{state}}" title="{{title | translate}}" ng-class="{'item-icon-right': loading}">
                         
                             <i class="icon {{icon}}"></i>{{title | translate}}
                             
