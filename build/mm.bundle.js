@@ -31016,7 +31016,11 @@ angular.module('mm.addons.notes')
                 return enabled;
             });
         };
-                self.getController = function(user, courseid) {
+                
+				
+				
+				/*
+				self.getController = function(user, courseid) {
                         return function($scope) {
                 $scope.title = 'mma.notes.addnewnote';
                 $scope.class = 'mma-notes-add-handler';
@@ -31046,6 +31050,7 @@ angular.module('mm.addons.notes')
                         loadingModal.dismiss();
                     });
                 };
+				
                 $scope.action = function($event) {
                     $event.preventDefault();
                     $event.stopPropagation();
@@ -31058,6 +31063,9 @@ angular.module('mm.addons.notes')
                 };
             };
         };
+		*/
+		
+		
         return self;
     };
         self.coursesNav = function() {
