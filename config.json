@@ -1,4 +1,5 @@
 {
+    "teste" : "TRUE",
     "app_id" : "com.moodle.moodlemobile",
     "appname": "Moodle Mobile",
     "versioncode" : "2017",
