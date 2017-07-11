@@ -4300,7 +4300,7 @@ ion-tabs.tabs-striped.tabs-color-active-dark .tab-item.tab-item-active, ion-tabs
     z-index: 10; }
   .menu .bar-header {
     z-index: 11;
-  background-color :  #004a8f; }
+  background-color :  #b22234; }
 
 .menu-content {
   -webkit-transform: none;
@@ -8428,7 +8428,7 @@ em {
   background-color: #f70;
   background-image: linear-gradient(0deg, transparent, transparent 50%, transparent 50%);
   color: #fff;
-  background-color :  #004a8f; }
+  background-color :  #b22234; }
   .bar-content .title {
     color: #fff; }
   .bar-content .button {
