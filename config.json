@@ -9,7 +9,7 @@
     "wsservice" : "moodle_mobile_app",
     "wsextservice" : "local_mobile",
     "demo_sites": {},
-    "siteurl": "https://www.ilabora.com.br/plataforma/",
+    "siteurl": "http://www.inglesfacilonline.com.br/",
     "notifications_enabled": true,
     "gcmpn": "694767596569"
 }
