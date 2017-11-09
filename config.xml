@@ -2,17 +2,17 @@
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
         xmlns:android = "http://schemas.android.com/apk/res/android"
-        id        = "plataforma.br.com.ilabora"
+        id        = "moodle.br.com.aegea.academia"
         versionCode = "1"
         version   = "1.0">
-    <name>iLabora</name>
+    <name>Aegea</name>
 
     <description>
-        iLabora
+        Aegea
     </description>
 
-    <author href="https://www.ilabora.com.br/plataforma/" email="elbyvaz@gmail.com">
-        iLabora
+    <author href="http://academia.aegea.com.br/moodle/" email="elbyvaz@gmail.com">
+        Aegea
     </author>
 
     <gap:config-file platform="ios" parent="CFBundleShortVersionString">
