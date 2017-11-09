@@ -10868,7 +10868,7 @@ angular.module('mm.core.login', [])
         controller: 'mmLoginCredentialsCtrl',
         params: {
             // siteurl: '',
-			siteurl: 'https://www.ilabora.com.br/plataforma/',
+			siteurl: 'http://academia.aegea.com.br/moodle/',
             username: '',
             urltoopen: '',
             siteconfig: null
