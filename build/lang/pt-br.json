@@ -541,7 +541,7 @@
     "mm.login.checksiteversion": "Verifique se sua plataforma usa a versão 2.4 ou superior.",
     "mm.login.confirmdeletesite": "Você tem certeza que quer excluir o site {{sitename}}?",
     "mm.login.connect": "Clique aqui para conectar",
-    "mm.login.connecttomoodle": "Conectar à plataforma iLabora",
+    "mm.login.connecttomoodle": "Conectar à plataforma Aegea",
     "mm.login.contactyouradministrator": "Contate o administrador do site para ter mais ajuda.",
     "mm.login.contactyouradministratorissue": "Por favor, pergunte ao administrador para verificar o seguinte problema: {{$a}}",
     "mm.login.createaccount": "Cadastrar este novo usuário",
