@@ -1,6 +1,6 @@
 {
-    "app_id" : "plataforma.br.com.ilabora",
-    "appname": "iLabora",
+    "app_id" : "moodle.br.com.aegea.academia",
+    "appname": "aegea",
     "versioncode" : "1",
     "versionname" : "1.0",
     "cache_expiration_time" : 300000,
@@ -9,7 +9,7 @@
     "wsservice" : "moodle_mobile_app",
     "wsextservice" : "local_mobile",
     "demo_sites": {},
-    "siteurl": "https://www.ilabora.com.br/plataforma/",
+    "siteurl": "http://academia.aegea.com.br/moodle/",
     "notifications_enabled": true,
     "gcmpn": "694767596569"
 }
