@@ -83,9 +83,9 @@
     <icon src="resources/ios/icon/icon-72.png"            gap:platform="ios"      width="72" height="72" />
     -->
     <icon src="resources/ios/icon/icon-76.png"            gap:platform="ios"      width="76" height="76" />
-    <!--
     <icon src="resources/ios/icon/icon-83.5@2x.png"       gap:platform="ios"      width="167" height="167" />
-    <icon src="resources/ios/icon/icon-40@3x.png"         gap:platform="ios"      width="120" height="120" />
+    <!--
+        <icon src="resources/ios/icon/icon-40@3x.png"         gap:platform="ios"      width="120" height="120" />
     <icon src="resources/ios/icon/icon-76@2x.png"         gap:platform="ios"      width="152" height="152" />
     <icon src="resources/ios/icon/icon@2x.png"            gap:platform="ios"      width="114" height="114" />
     <icon src="resources/ios/icon/icon-72@2x.png"         gap:platform="ios"      width="144" height="144" />
